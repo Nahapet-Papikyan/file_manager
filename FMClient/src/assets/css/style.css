@@ -1,0 +1,177 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* new classes  start*/
+
+.overflow-hidden {
+  overflow: hidden auto;
+}
+
+.transition-all-1 {
+  transition: all 1s ease 0s;
+}
+
+.transition-all-05 {
+  transition: all .5s ease 0s;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.w-0 {
+  width: 0% 
+}
+
+.w-100 {
+  width: 100% 
+}
+/* new classes  end*/
+
+
+.page {
+  overflow: hidden;
+  height: 100%;
+}
+
+.header {
+  position: fixed;
+  height: 60px;
+  width: 100%;
+}
+
+.main {
+  padding-top: 55px;
+  min-height: 100%;
+}
+
+.aside {
+  position: fixed;
+  height: 100vh;
+  width: 40px;
+  left: 0;
+  background-color: #EDEEF0;
+  z-index: 100;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tabs__block {
+  display: none;
+  margin: 15px;
+}
+
+.tabs__block.is-active {
+  display: block;
+}
+
+.tab-header {
+  text-align: center;
+  font-size: 30px;
+}
+
+.main-content {
+  margin-left: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+}
+
+.card-one {
+  width: 100%;
+  background-color: #EDEEF0;
+}
+
+.card-two {
+  width: 100%;
+  background-color: #fff;
+  z-index: 20;
+}
+
+.navtwo {
+  margin: 1px;
+}
+
+.card-two-body {
+  margin: 15px;
+}
+
+.blank {
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding-top: 50px;
+}
+
+.card-three {
+  width: 100%;
+  position: relative;
+  right: -588px;
+  display: none;
+  background-color: #EDEEF0;
+  z-index: 15;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.card-three.active {
+  right: 0;
+  display: block;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.card-three-content {
+  margin: 20px 10px 0px 50px;
+}
+
+.card-one-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+.card-one-tab-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.delimiter {
+  display: block;
+  width: 6px;
+  height: 100vh;
+  cursor: ew-resize;
+  right: 0;
+  background: #d7d7d1;
+}
+
+.delimiter:hover {
+  background-color: cornflowerblue;
+}
+
+@media (max-width: 600px) {
+  .page {
+    overflow: auto;
+  }
+}
